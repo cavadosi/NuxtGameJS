@@ -1,13 +1,11 @@
 <template>
-    <div class="bg-slate-900">
-        <div class="flex flex-col justify-center font-mono  text-white">
-            <nav class="flex items-center justify-start bg-slate-900/80 p-4 mb-24">
-                <button href="/index.html"  class="rounded-lg border border-1 border-transparent transform hover:border-cyan-400 hover: p-1">Home</button>
-            </nav>
-            <div class="flex flex-col items-center justify-center h-lg  mb-36 ">
-                <h1 class="text-7xl m-4">Juego JS</h1>
-                <h2 class="text-sm p-6">hecho por Joan Garcia</h2>
+        <div class="flex items-center justify-center h-screen max-w-full ">
+            <div class="flex flex-col items-center justify-center max-w-7xl text-white">
+                <h1 class="text-3xl m-5">Welcome to</h1>
+                <h2 class="text-5xl text-green-500 font-medium">My JS games</h2>
+            </div>
+            <div class="flex flex-col items-center justify-center ">
+                <GameSlider/>
             </div>
         </div>
-    </div>
 </template> 

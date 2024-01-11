@@ -1,7 +1,18 @@
 <template>
-  <div class="bg-slate-900 h-screen">
-    <NuxtLayout>
-      <NuxtPage/>
-    </NuxtLayout>
-  </div>
+	<body >
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</body>
 </template>
+
+
+<style>
+
+body {
+	background: rgb(6,11,35);
+	background: radial-gradient(circle, rgba(6,11,35,1) 100%, rgba(2,4,32,1) 100%);
+	min-height: 100%;
+}
+
+</style>
