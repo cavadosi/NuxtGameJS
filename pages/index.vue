@@ -1,12 +1,12 @@
 <template>
     <div class="flex-col justify-center">
-        <div class="flex flex-col md:flex-row items-center justify-center max-w-full py-10 md:py-24 md:pb-40 md:gap-x-16 lg:gap-x-28">
+        <div class="flex flex-col md:flex-row items-center justify-center max-w-full pb-10 md:py-24 md:pb-40 md:gap-x-16 lg:gap-x-28">
             <div class="flex flex-col items-center justify-center text-white mb-8 md:mb-16">
                 <h1 class="text-3xl lg:text-5xl mb-5 lg:mb-10">Welcome to</h1>
-                <h2 class="text-5xl lg:text-7xl text-green-500 font-medium">My JS games</h2>
+                <h2 class="text-5xl lg:text-7xl text-primary font-medium">My JS games</h2>
             </div>
-            <div class="flex items-end justify-center p-10">
-                <GameSlider class="overflow-clip"/>
+            <div class="flex items-end justify-center mt-16 mb-20 md:m-10">
+                <GameSlider class="overflow-hidden"/>
             </div>
         </div>
         
@@ -70,3 +70,4 @@ const juegos = [
 ];
 
 </script>
+
