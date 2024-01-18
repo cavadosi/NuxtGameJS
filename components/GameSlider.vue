@@ -3,14 +3,14 @@
   :effect="'cards'"
   :grabCursor="true"
   :modules="modules"
-  class="mySwiper relative"
+  class="mySwiper relative overflow-clip"
   >
   <swiper-slide>Slide 1</swiper-slide>
   <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
   <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
   <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
   <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-  <div class="gooey absolute inset-0"></div>
+  <div class="gooey absolute -inset-x-12 -inset-y-10 overflow-clip"></div>
   </swiper>
 </template>
 <script>
@@ -96,19 +96,11 @@
   background-color: rgb(54, 94, 77);
 }
 
-
-
-
-
-body{
-  animation: fadeIn 500ms reverse;
-}
-
 .gooey{
-  background-image: linear-gradient(120deg, #34e0f0 0%, #b400ff 100%);
+  background-image: linear-gradient(120deg, #22c55e 0%, #15803d 100%);
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
   width: 400px; height: 450px;
-  animation: morph 3s linear infinite; 
+  animation: morph 10s linear infinite; 
   transform-style: preserve-3d;
   outline: 1px solid transparent;
   will-change: border-radius;
@@ -122,10 +114,10 @@ body{
   position: absolute;
   left: 0; top: 0;
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-  box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.21);
+  box-shadow: 5px 5px 89px #041A29;
   will-change: border-radius, transform, opacity;
   animation-delay: 200ms;
-  background-image: linear-gradient(120deg, rgba(0,67,255,.55) 0%, rgba(0,103,255,.89) 100%);
+  background-image: linear-gradient(120deg, #16a34a 0%, #14532d 100%);
 }
 
 .gooey:before{
@@ -138,7 +130,7 @@ body{
   animation: morph 3s linear infinite;
   animation-delay: 400ms;
   opacity: .89;
-  content: "What'cSS up?";
+  content: "";
   line-height: 120px;
   text-indent: -21px;
 }
