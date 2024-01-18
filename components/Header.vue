@@ -11,13 +11,13 @@
         </div>
         <div class="hidden md:flex gap-x-12">
           <NuxtLink to="/" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">Home</NuxtLink>
-          <NuxtLink to="/games/flappybird" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">Games</NuxtLink>
+          <HeaderDropdown />
           <NuxtLink to="/about" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">About</NuxtLink>
           
         </div>
-        <div class="hidden md:flex md:flex-1 md:justify-end text-zinc-500">
+        <div class="hidden md:flex md:flex-1 md:justify-end rounded-full text-zinc-500">
           <a href="https://github.com/cavadosi" target="blank">
-            <Icon icon="icomoon-free:github" class="w-20 h-8 transform hover:text-white hover:cursor-pointer"  />
+            <Icon icon="icomoon-free:github" class="w-8 h-8 transform hover:text-white hover:cursor-pointer"  />
           </a>
         </div>
         <div class="flex flex-1 justify-end md:hidden text-zinc-500">
@@ -73,7 +73,7 @@ const mobileMenuOpen = ref(false);
 
 </script>
 
-<style scoped>
+<style>
 .my-link.router-link-exact-active {
 	@apply text-green-500 font-bold;
 }

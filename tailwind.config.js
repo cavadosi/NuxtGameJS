@@ -20,6 +20,7 @@ export default {
         },
 
         nuxtGray: '#060B23',
+        secondary: '#041A29'
       },
     },
   },

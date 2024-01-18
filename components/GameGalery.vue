@@ -28,6 +28,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
+
 .blob {
   width: 80px;
   aspect-ratio: 1;
