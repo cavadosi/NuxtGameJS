@@ -3,16 +3,17 @@
   :effect="'cards'"
   :grabCursor="true"
   :modules="modules"
-  class="mySwiper relative overflow-clip"
+  class="mySwiper relative"
   >
   <swiper-slide>Slide 1</swiper-slide>
   <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
   <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
   <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
   <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-  <div class="gooey absolute -inset-x-12 -inset-y-10 overflow-clip"></div>
+  <div class="gooey absolute -inset-x-12 -inset-y-10 "></div>
   </swiper>
 </template>
+
 <script>
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -99,7 +100,7 @@
 .gooey{
   background-image: linear-gradient(120deg, #22c55e 0%, #15803d 100%);
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-  width: 400px; height: 450px;
+  max-width: 400px; max-height: 450px;
   animation: morph 10s linear infinite; 
   transform-style: preserve-3d;
   outline: 1px solid transparent;

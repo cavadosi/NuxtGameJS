@@ -1,7 +1,7 @@
 <template>
   <header class="sticky top-0 z-10">
 
-    <div class="backdrop-blur md:border-b border-gray-800 text-white">
+    <div class="backdrop-blur bg-nuxtGray/30 md:border-b border-gray-800 text-white">
       <nav class="mx-auto flex w-full items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex md:flex-1">
           <NuxtLink to="/">  
@@ -43,7 +43,7 @@
                 <div class="divide-gray-500/10">
                   <div class="flex flex-col space-y-4 py-8 text-center">
                     <NuxtLink to="/" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">Home</NuxtLink>
-                    <NuxtLink to="/games/flappybird" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">Games</NuxtLink>
+                    <HeaderDropdown />
                     <NuxtLink to="/about" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">About</NuxtLink>
                   </div>
                 </div>
