@@ -58,17 +58,18 @@
 
 <script >
 import { Dialog, DialogPanel } from '@headlessui/vue';
-
+import { Icon } from '@iconify/vue';
 export default {
 	components: {
 		Icon,
 	},
+  
 };
 
 </script>
 
 <script setup>
-import { Icon } from '@iconify/vue';
+
 const mobileMenuOpen = ref(false);
 
 </script>

@@ -5,7 +5,7 @@
       <div class="hidden md:flex blob mx-8 rounded-full"></div>
     </div>
     <div class="max-w-5xl p-5 mb-10 mx-6 text-white">
-      <div v-for="game in games" :key="games.id" class="transform transition-transform hover:scale-105 bg-secondary-900 ring-2 ring-gray-800 hover:ring-primary rounded-lg overflow-hidden shadow-xl mb-10">
+      <div v-for="(game, index) in games" :key="index" class="transform transition-transform hover:scale-105 bg-secondary-900 ring-2 ring-gray-800 hover:ring-primary rounded-lg overflow-hidden shadow-xl mb-10">
         <div :class="{ 'md:flex-row-reverse': game.isRight }" class="md:flex md:flex-row">
           <img :src="game.img" alt="Game Image" class="w-full md:w-96 h-64 object-cover object-top md:object-center" />
           <div class="p-6 md:p-8 w-full text-white">
@@ -35,7 +35,7 @@ const props = defineProps({
 
 section {
   background-color: #060b23;
-background-image: url(/game-galery.png);
+  background-image: url(/game-galery.png);
 }
 
 .blob {
