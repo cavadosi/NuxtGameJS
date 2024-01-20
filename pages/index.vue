@@ -77,15 +77,15 @@ const juegos = [
         name: 'Blackjack',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
         image: '',
-        href:'/flappyBird',
+        href:'/games/blackjack',
         isRight: true,
     },
     {
         id: 3,
-        name: 'Batalla naval',
+        name: 'Naval Battle',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
         image: '',
-        href:'/flappyBird',
+        href:'/games/naval-battle',
         isRight: false,
     },
     {
@@ -93,7 +93,7 @@ const juegos = [
         name: 'Pac-man',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
         image: '',
-        href:'/flappyBird',
+        href:'/games/pac-man',
         isRight: true,
     },
     {
@@ -101,7 +101,7 @@ const juegos = [
         name: 'Tetris',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
         image: '',
-        href:'/flappyBird',
+        href:'/games/tetris',
         isRight: false,
     },
     {
@@ -109,7 +109,7 @@ const juegos = [
         name: 'Juego Clase',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
         image: '',
-        href:'/flappyBird',
+        href:'/games/juego-clase',
         isRight: true,
     },
 ];
