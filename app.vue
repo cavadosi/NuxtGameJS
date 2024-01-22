@@ -1,3 +1,15 @@
+<script setup lang="ts">
+
+
+useHead({
+	titleTemplate: (titleChunk) => {
+		return titleChunk ? `${titleChunk} - Game` : 'Game';
+	},
+	meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+	link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://api.iconify.design/bxs/game.svg?color=%2322c55e' }]
+});
+</script>
+
 <template>
 	<body >
 		<NuxtLayout>
