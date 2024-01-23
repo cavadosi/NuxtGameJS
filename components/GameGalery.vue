@@ -1,16 +1,17 @@
 <template>
   <section class="sticky top-0 z-30">
-    <div class="flex sticky top-0 z-40 items-center justify-center   bg-nuxtGray text-white mb-20"> 
-      <h1 class="text-4xl md:text-7xl font-bold pb-6 pt-4 text-primary ">Game Galery</h1>
-      <div class="hidden md:flex blob mx-8 rounded-full"></div>
+    <div class="flex sticky top-0 z-40 items-center justify-center bg-nuxtGray text-white mb-20"> 
+        <h1 class="text-4xl md:text-7xl font-bold pb-6 pt-4  text-primary ">Game Galery</h1>
+        <div class="hidden md:flex blob mx-8 rounded-full"></div>
     </div>
-    <div class="max-w-5xl p-5 mb-10 mx-6 text-white">
-      <div v-for="(game, index) in games" :key="index" class="transform transition-transform hover:scale-105 bg-secondary-900 ring-2 ring-gray-800 hover:ring-primary rounded-lg overflow-hidden shadow-xl mb-10">
-        <div :class="{ 'md:flex-row-reverse': game.isRight }" class="md:flex md:flex-row">
-          <img :src="game.image" alt="Game Image" class="w-full md:w-96 h-64 object-contain object-top md:object-center" />
-          <div class="p-6 md:p-8 w-full text-white">
-            <h2 class="text-lg font-bold mb-4 mx-4">{{ game.name }}</h2>
-            <p class="max-w-sm">{{ game.description }}</p>
+    <div class="flex items-center justify-center">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl gap-x-8 p-5 mb-10 mx-6 text-white">
+        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group max-w-72 transform transition-transform hover:scale-105 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
+          <img :src="game.image" alt="Game Image" class="w-full md:w-72 h-60 object-cover object-top md:object-center" />
+          <div class="flex flex-row items-center justify-between p-4 md:p-6 w-full text-white bg-secondary">
+            <h2 class="text-xl font-semibold  mx-4">{{ game.name }}<span :class="[game.textcolor]">{{ game.name2 }}</span></h2>
+            <Icon icon="memory:play" :class="[game.iconcolor, game.ringcolor, 'h-14 w-14 rounded-full group-hover/item-visible']"/>
           </div>
         </div>
       </div>
@@ -21,7 +22,7 @@
 
 
 <script setup>
-
+import { Icon } from '@iconify/vue';
 const props = defineProps({
 	games: {
 		type: Object,
