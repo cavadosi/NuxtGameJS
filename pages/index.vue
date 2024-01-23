@@ -1,14 +1,11 @@
 <template>
     <div class="relative">
-        <div class="relative">
+        <div class="relative mt-52 md:mt-56 pb-80 md:pb-76">
             <div class="flex-col justify-center">
-                <div class="flex flex-col md:flex-row items-center justify-center max-w-full pb-10 md:py-24 md:pb-40 lg:pt-28 lg:pb-56 md:gap-x-16 lg:gap-x-28">
-                    <div class="flex flex-col items-center md:items-start text-white m-8 ">
-                        <h1 class="text-3xl lg:text-5xl mb-4">Welcome to</h1>
-                        <h1 class="text-5xl lg:text-7xl text-primary font-medium">My JS games</h1>
-                    </div>
-                    <div class="flex items-end justify-center mt-16 mb-20 md:m-10">
-                        <GameSlider class="overflow-hidden"/>
+                <div class="flex items-center justify-center max-w-full ">
+                    <div class="flex flex-col items-start text-white m-8 ">
+                        <h1 class="text-xl sm:text-3xl md:text-5xl mb-1 sm:mb-2 md:mb-4">Welcome to</h1>
+                        <h1 class="text-3xl sm:text-5xl md:text-7xl text-primary font-medium">My JS games</h1>
                     </div>
                 </div>
                 
@@ -68,7 +65,7 @@ const juegos = [
         id: 1,
         name: 'Flappybird',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
-        image: '',
+        image: '/flappy-bird.png',
         href:'/games/flappyBird',
         isRight: false,
     },
@@ -76,7 +73,7 @@ const juegos = [
         id: 2,
         name: 'Blackjack',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
-        image: '',
+        image: '/blackjack.jpg',
         href:'/games/blackjack',
         isRight: true,
     },
@@ -84,7 +81,7 @@ const juegos = [
         id: 3,
         name: 'Naval Battle',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
-        image: '',
+        image: '/naval-battle.png',
         href:'/games/naval-battle',
         isRight: false,
     },
@@ -92,7 +89,7 @@ const juegos = [
         id: 4,
         name: 'Pac-man',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
-        image: '',
+        image: 'pac-man.avif',
         href:'/games/pac-man',
         isRight: true,
     },
@@ -100,7 +97,7 @@ const juegos = [
         id: 5,
         name: 'Tetris',
         description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum iaculis dui, non volutpat ante rhoncus vel. Fusce cursus dui non vestibulum facilisis. Curabitur pretium id nunc et molestie. Phasellus aliquam neque ac ipsum facilisis, vel rutrum libero lacinia. Sed porttitor tempus nisi id eleifend. Etiam ornare augue quis consequat facilisis.',
-        image: '',
+        image: '/tetris.webp',
         href:'/games/tetris',
         isRight: false,
     },

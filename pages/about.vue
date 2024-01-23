@@ -2,12 +2,12 @@
   <div class="h-full relative -mt-20 " id="title">
     <!-- img and title section -->
     <section
-      class="relative flex justify-center w-full"
+      class="relative flex justify-center w-full overflow-hidden"
 
     >
       <!-- <img src="/nightcity.jpeg" alt="" class="h-96 overflow-hidden"> -->
       <div class="flex items-center justify-center max-w-4xl py-80">
-        <h1 class="text-green-500 text-7xl mb-10">./about route test</h1>
+        <h1 class="text-green-500 text-7xl mb-10 font-semibold">Cavadosi</h1>
       </div>
       <div class="custom-shape-divider-bottom-1705920996 h-28 sm:h-36 md:h-[244px]">
         <svg
@@ -69,7 +69,7 @@
     </section>
 
     <!-- img divider -->
-    <section class="relative flex items-start justify-center w-full h-full p-64">
+    <section class="relative flex items-start justify-center overflow-hidden w-full h-full p-64">
       <div class="custom-shape-divider-top-1705921072 h-28 sm:h-36 md:h-[244px]">
         <svg
           data-name="Layer 1"
