@@ -7,11 +7,11 @@
     <div class="flex items-center justify-center">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl gap-x-8 p-5 mb-10 mx-6 text-white">
-        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group max-w-72 transform transition-transform hover:scale-105 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
+        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group/item max-w-72 transform transition-transform hover:scale-105 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
           <img :src="game.image" alt="Game Image" class="w-full md:w-72 h-60 object-cover object-top md:object-center" />
-          <div class="flex flex-row items-center justify-between p-4 md:p-6 w-full text-white bg-secondary">
-            <h2 class="text-xl font-semibold  mx-4">{{ game.name }}<span :class="[game.textcolor]">{{ game.name2 }}</span></h2>
-            <Icon icon="memory:play" :class="[game.iconcolor, game.ringcolor, 'h-14 w-14 rounded-full group-hover/item-visible']"/>
+          <div class="flex flex-row items-center justify-between md:justify-center group-hover/item:justify-between p-4 md:p-6 w-full text-white bg-secondary">
+            <h2 class="text-xl font-semibold py-2 mx-4">{{ game.name }}<span :class="[game.textcolor]">{{ game.name2 }}</span></h2>
+            <Icon icon="memory:play" :class="[game.iconcolor, 'h-10 w-20 rounded-full -mr-4 flex md:hidden group-hover/item:block']"/>
           </div>
         </div>
       </div>

@@ -68,7 +68,7 @@ const juegos = [
         image: '/flappy-bird.png',
         href:'/games/flappyBird',
         ringcolor: 'hover:ring-primary',
-        iconcolor: 'text-color-primary',
+        iconcolor: 'text-primary',
         isRight: false,
     },
     {
@@ -78,7 +78,7 @@ const juegos = [
         image: '/blackjack.jpg',
         href:'/games/blackjack',
         ringcolor: 'hover:ring-lime-600',
-        iconcolor: 'text-color-lime-600',
+        iconcolor: 'text-lime-600',
         isRight: true,
     },
     {
@@ -88,7 +88,7 @@ const juegos = [
         image: '/naval-battle.png',
         href:'/games/naval-battle',
         ringcolor: 'hover:ring-sky-400',
-        iconcolor: 'text-color-sky-400',
+        iconcolor: 'text-sky-400',
         isRight: false,
     },
     {
@@ -98,7 +98,7 @@ const juegos = [
         image: 'pac-man.avif',
         href:'/games/pac-man',
         ringcolor: 'hover:ring-yellow-400',
-        iconcolor: 'text-color-yellow-400',
+        iconcolor: 'text-yellow-400',
         isRight: true,
     },
     {
@@ -108,7 +108,7 @@ const juegos = [
         image: '/tetris.webp',
         href:'/games/tetris',
         ringcolor: 'hover:ring-blue-500',
-        iconcolor: 'text-color-blue-500',
+        iconcolor: 'text-blue-500',
         isRight: false,
     },
     {
@@ -118,7 +118,7 @@ const juegos = [
         image: '',
         href:'/games/juego-clase',
         ringcolor: 'hover:ring-indigo-600',
-        iconcolor: 'text-color-indigo-600',
+        iconcolor: 'text-indigo-600',
         isRight: true,
     },
 ];
