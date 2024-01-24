@@ -1,7 +1,6 @@
 <template>
-    <div class="relative">
-        <div class="relative mt-52 md:mt-56 pb-80 md:pb-76">
-            <div class="flex-col justify-center">
+    <div class="relative h-full -mt-20">
+        <div class="relative flex items-center justify-center h-[100vh]">
                 <div class="flex items-center justify-center max-w-full ">
                     <div class="flex flex-col items-start text-white m-8 ">
                         <h1 class="text-xl sm:text-3xl md:text-5xl mb-1 sm:mb-2 md:mb-4">Welcome to</h1>
@@ -16,7 +15,6 @@
                         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill-black"></path>
                     </svg>
                 </div>
-            </div>
         </div>
         <GameGalery :games="juegos" />
         <div class="custom-shape-divider-bottom absolute bottom-0 z-30">

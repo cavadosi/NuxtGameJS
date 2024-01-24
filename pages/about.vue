@@ -2,7 +2,7 @@
   <div class="h-full relative -mt-20 " id="title">
     <!-- img and title section -->
     <section
-      class="relative flex justify-center w-full overflow-hidden"
+      class="relative flex h-[100vh] justify-center w-full overflow-hidden"
 
     >
       <!-- <img src="/nightcity.jpeg" alt="" class="h-96 overflow-hidden"> -->
@@ -26,9 +26,9 @@
 
     <!-- about text section -->
     <section
-      class="relative flex items-center justify-center w-full bg-nuxtGray -mt-1 py-8"
+      class="relative flex items-center justify-center w-full bg-nuxtGray -mt-1 py-8 " 
     >
-      <div class="text-white z-0 max-w-md">
+      <div class="text-white z-0 max-w-md mx-6">
         <h1 class="text-5xl font-semibold text-primary mb-5">About us</h1>
         <h2 class="text-xl font-semibold mb-8">This is my first project</h2>
         <p class="text-md text-zinc-400">
@@ -69,7 +69,7 @@
     </section>
 
     <!-- img divider -->
-    <section class="relative flex items-start justify-center overflow-hidden w-full h-full p-64">
+    <section class="relative flex items-center justify-center w-full -mt-1 py-8 h-96">
       <div class="custom-shape-divider-top-1705921072 h-28 sm:h-36 md:h-[244px]">
         <svg
           data-name="Layer 1"

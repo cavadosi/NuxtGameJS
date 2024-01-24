@@ -5,7 +5,7 @@
     <!-- Contenedor del Juego -->
 
     <div
-      class="relative items-center justify-center max-w-7xl max-h-full lg:p-72 text-white"
+      class="relative items-center justify-center max-w-full  max-h-full lg:p-72 text-white"
     >
       <slot/>
       <div

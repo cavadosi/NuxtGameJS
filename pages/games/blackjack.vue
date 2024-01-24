@@ -1,6 +1,6 @@
 <template>
   <GameLayout :game="game">
-    <h1>djdjsflskdfljkfd</h1>
+
   </GameLayout>
 </template>
 
