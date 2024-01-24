@@ -7,11 +7,13 @@
     <div class="flex items-center justify-center">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl gap-x-8 p-5 mb-10 mx-6 text-white">
-        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group/item max-w-72 transform transition-transform hover:scale-105 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
+        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group/item max-w-72 hover:scale-105 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
           <img :src="game.image" alt="Game Image" class="w-full md:w-72 h-60 object-cover object-top md:object-center" />
-          <div class="flex flex-row items-center justify-between md:justify-center group-hover/item:justify-between p-4 md:p-6 w-full text-white bg-secondary">
-            <h2 class="text-xl font-semibold py-2 mx-4">{{ game.name }}<span :class="[game.textcolor]">{{ game.name2 }}</span></h2>
-            <Icon icon="memory:play" :class="[game.iconcolor, 'h-10 w-20 rounded-full -mr-4 flex md:hidden group-hover/item:block']"/>
+          <div class="flex flex-row items-center justify-between md:justify-center group-hover/item:justify-between group-hover/item:transition duration-500 p-4 max-h-16 md:p-6 w-full text-white bg-secondary">
+            <h2 class="text-xl font-semibold py-2 mx-4 group-hover/item:transition-all duration-500">{{ game.name }}<span :class="[game.textcolor]">{{ game.name2 }}</span></h2>
+            <NuxtLink :to="game.href">
+              <Icon icon="memory:play" :class="[game.iconcolor, 'h-10 w-20 rounded-full -mr-4 flex md:hidden hover:cursor-pointer group-hover/item:block group-hover/item:transition-all ease-in-out delay-150 duration-500']"/>
+            </NuxtLink>
           </div>
         </div>
       </div>
