@@ -29,7 +29,7 @@
         <ClientOnly>
           <Dialog as="div" class="md:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
             <div class="fixed inset-0 z-10" />
-            <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-secondary-950/90 backdrop-blur-sm px-6 py-6">
+            <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-nuxt backdrop-blur-sm px-6 py-6">
               <div class="flex items-center justify-between">
                 <NuxtLink to="/">  
                   <Icon icon="bxs:game" class="text-primary w-20 h-8 transform: hover:text-green-700 hover:cursor-pointer"/>
@@ -40,7 +40,7 @@
                 </button>
               </div>
               <div class="mt-6 flex justify-center items-center text-white">
-                <div class="divide-gray-500/10">
+                <div>
                   <div class="flex flex-col space-y-4 py-8 text-center">
                     <NuxtLink to="/" class="text-sm font-semibold leading-6 transform hover:text-primary-700 my-link">Home</NuxtLink>
                     <HeaderDropdown />

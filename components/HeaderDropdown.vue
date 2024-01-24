@@ -8,7 +8,7 @@
       </div>
 
       <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
-        <MenuItems class="absolute right-0 z-20 mt-2 w-32 origin-top-right rounded-md md:bg-nuxtGray/50 ring-1 ring-gray-800 shadow-lg focus:outline-none overflow-hidden">
+        <MenuItems class="absolute  md:right-0  z-20 mt-2 w-32 md:origin-top-right rounded-md bg-nuxtGray/50 ring-1 ring-gray-800 shadow-lg focus:outline-none overflow-hidden">
             <MenuItem v-for="(juego, index) in juegos" :key="index" v-slot="{ active }">
               <a :href="juego.href" :class="[active ? 'bg-nuxtGray/70 text-primary-700' : 'text-white', 'block px-4 py-2 text-sm my-link ']">{{ juego.name }}</a>
             </MenuItem>
