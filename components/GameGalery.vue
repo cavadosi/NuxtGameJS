@@ -7,12 +7,12 @@
     <div class="flex items-center justify-center">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl gap-x-8 p-5 mb-10 mx-6 text-white">
-        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group/item max-w-72 hover:scale-105 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
+        <div v-for="(game, index) in games" :key="index" :class="game.ringcolor" class="flex-col group/item max-w-72 hover:scale-105 duration-500 ring-4 ring-gray-800 rounded-lg overflow-hidden shadow-xl mb-10">
           <img :src="game.image" alt="Game Image" class="w-full md:w-72 h-60 object-cover object-top md:object-center" />
-          <div class="flex flex-row items-center justify-between md:justify-center group-hover/item:justify-between group-hover/item:transition duration-500 p-4 max-h-16 md:p-6 w-full text-white bg-secondary">
-            <h2 class="text-xl font-semibold py-2 mx-4 group-hover/item:transition-all duration-500">{{ game.name }}<span :class="[game.textcolor]">{{ game.name2 }}</span></h2>
+          <div class="flex flex-row items-center justify-between md:justify-center  p-4 max-h-16 md:p-6 w-full text-white bg-secondary">
+            <h2 class="text-xl font-semibold py-2 mx-4 transform transition-all md:group-hover/item:-translate-x-16 delay-150 duration-250">{{ game.name }}</h2>
             <NuxtLink :to="game.href">
-              <Icon icon="memory:play" :class="[game.iconcolor, 'h-10 w-20 rounded-full -mr-4 flex md:hidden hover:cursor-pointer group-hover/item:block group-hover/item:transition-all ease-in-out delay-150 duration-500']"/>
+              <Icon icon="memory:play" :class="[game.iconcolor, 'h-10 w-20 rounded-full -mr-6 md:-mr-20  hover:cursor-pointer md:opacity-0 md:group-hover/item:block transition-all md:group-hover/item:opacity-100 delay-150 duration-400']"/>
             </NuxtLink>
           </div>
         </div>
@@ -20,9 +20,7 @@
     </div>
   </section>
 </template>
-
-
-
+v 
 <script setup>
 import { Icon } from '@iconify/vue';
 const props = defineProps({
