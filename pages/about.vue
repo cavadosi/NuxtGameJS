@@ -254,12 +254,7 @@
 }
 </style>
 
-<script>
+<script setup>
 import { Icon } from "@iconify/vue";
 
-export default {
-  components: {
-    Icon,
-  },
-};
 </script>

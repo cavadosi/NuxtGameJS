@@ -49,12 +49,7 @@
 v
 <script setup>
 import { Icon } from "@iconify/vue";
-const props = defineProps({
-  games: {
-    type: Object,
-    required: true,
-  },
-});
+
 </script>
 
 <style scoped>

@@ -25,17 +25,17 @@
         class="absolute md:right-0 z-20 mt-2 w-32 md:origin-top-right rounded-md bg-nuxtGray/50 ring-1 ring-gray-800 shadow-lg focus:outline-none overflow-hidden"
       >
         <MenuItem
-          v-for="(juego, index) in juegos"
+          v-for="(game, index) in games"
           :key="index"
           v-slot="{ active }"
         >
           <a
-            :href="juego.href"
+            :href="game.href"
             :class="[
               active ? 'bg-nuxtGray/70 text-primary-700' : 'text-white',
               'block px-4 py-2 text-sm my-link ',
             ]"
-            >{{ juego.name }}</a
+            >{{ game.name }}</a
           >
         </MenuItem>
       </MenuItems>
@@ -47,38 +47,7 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
 import { Icon } from "@iconify/vue";
 
-const juegos = [
-  {
-    id: 1,
-    name: "Flappybird",
-    href: "/games/flappyBird",
-  },
-  {
-    id: 2,
-    name: "Blackjack",
-    href: "/games/blackjack",
-  },
-  {
-    id: 3,
-    name: "Naval Battle",
-    href: "/games/naval-battle",
-  },
-  {
-    id: 4,
-    name: "Pac-man",
-    href: "/games/pac-man",
-  },
-  {
-    id: 5,
-    name: "Tetris",
-    href: "/games/tetris",
-  },
-  {
-    id: 6,
-    name: "Juego Clase",
-    href: "/games/juego-clase",
-  },
-];
+
 </script>
 
 <style scoped>
