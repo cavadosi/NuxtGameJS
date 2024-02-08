@@ -27,7 +27,7 @@
             class="flex flex-row items-center justify-between md:justify-center p-4 max-h-16 md:p-6 w-full text-white bg-secondary"
           >
             <h2
-              class="text-xl font-semibold py-2 mx-4 transform transition-all md:group-hover/item:-translate-x-16 delay-150 duration-250"
+              class="text-xl font-semibold py-2 mx-4 transform transition-all md:group-hover/item:-translate-x-16 delay-150 duration-4000"
             >
               {{ game.name }}
             </h2>
@@ -46,7 +46,7 @@
     </div>
   </section>
 </template>
-v
+
 <script setup>
 import { Icon } from "@iconify/vue";
 

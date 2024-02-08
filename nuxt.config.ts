@@ -5,5 +5,15 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {},
   },
-  modules: ['@nuxtjs/tailwindcss']
-})
+  modules: [
+    "@nuxtjs/tailwindcss",
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          Sixtyfour: true
+        },
+      },
+    ],
+  ],
+});
